@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>final_assignment</name>
+  <version>1.0.0</version>
+  <description>Final assignment of MechB Winter Seminar</description>
+  <maintainer email="mitukou1109@g.ecc.u-tokyo.ac.jp">Mitsuhiro Sakamoto</maintainer>
+
+  <license>MIT</license>
+
+  <depend>actionlib</depend>
+  <depend>final_assignment_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>move_base_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+
+  <exec_depend>dynamixel_7dof_arm</exec_depend>
+  <exec_depend>navigation</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>turtlebot_bringup</exec_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find final_assignment)/launch/object_detection.launch" />
+  <include file="$(find final_assignment)/launch/navigation.launch" />
+
+  <node name="behavior_manager" pkg="final_assignment" type="behavior_manager" output="screen">
+    <param name="approach_distance" value="0.4" />
+    <remap from="/cmd_vel" to="/mobile_base/commands/velocity" />
+  </node>
+</launch>
